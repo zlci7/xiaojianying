@@ -1,0 +1,13 @@
+# 隐私配置文件（不提交git）
+# 复制 config.template.yaml 为 config.yaml 并填入真实值
+
+api:
+  key: "sk-ant-xxx"                    # Anthropic API密钥
+  base_url: "https://api.anthropic.com"  # API地址，支持代理/中转
+  model: "claude-sonnet-4-20250514"      # 模型
+
+paths:
+  rules_dir: null        # null = 使用默认（项目内rules/）
+  styles_dir: null       # null = 使用默认（项目内styles/）
+  bgm_dir: null          # null = 使用默认（项目内bgm_library/）
+  output_dir: null       # null = 使用默认（./output/）

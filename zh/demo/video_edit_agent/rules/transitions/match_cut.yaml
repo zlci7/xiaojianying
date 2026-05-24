@@ -1,0 +1,17 @@
+name: "匹配剪辑 - 动接动"
+category: transition
+description: "利用前后镜头运动方向一致实现无缝转场"
+params:
+  motion_tolerance: 15
+  min_match_duration: 0.3
+apply_condition:
+  prev_shot_motion: required
+  next_shot_motion: required
+  motion_angle_diff: "<15"
+implementation:
+  engine: "moviepy"
+  method: "composite_with_blend"
+  blend_duration: "{{blend_duration}}"
+quality_tips:
+  best_for: ["动作衔接", "行走跟拍切换"]
+  avoid_when: ["前后运动方向相反", "速度差异过大"]

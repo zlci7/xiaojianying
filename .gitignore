@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.claude/
+# 媒体文件
+*.mp4
+*.avi
+*.mov
+
+# 隐私安全 — 敏感配置文件
+config.yaml
+*.env
+.env.*
+credentials.*
+*_credentials.*

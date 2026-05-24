@@ -1,0 +1,12 @@
+name: "硬切"
+category: transition
+description: "无特效直接切换镜头，最基础的转场"
+params:
+  duration: 0.0
+apply_condition: {}
+implementation:
+  engine: "moviepy"
+  method: "direct_cut"
+quality_tips:
+  best_for: ["快节奏段落", "同场景连续动作"]
+  avoid_when: ["需要平滑过渡时"]

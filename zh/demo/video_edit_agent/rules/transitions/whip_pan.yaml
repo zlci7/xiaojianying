@@ -1,0 +1,13 @@
+name: "甩镜转场"
+category: transition
+description: "快速横向甩动镜头过渡到下一个画面"
+params:
+  duration: 0.2
+  direction: "horizontal"
+apply_condition: {}
+implementation:
+  engine: "moviepy"
+  method: "whip_pan_effect"
+quality_tips:
+  best_for: ["快闪段落", "节奏变化点"]
+  avoid_when: ["慢叙事段落"]

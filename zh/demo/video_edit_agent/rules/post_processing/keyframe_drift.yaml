@@ -1,0 +1,14 @@
+name: "关键帧漂移"
+category: post_processing
+description: "画面微微缩放/位移增加动感，避免静态画面呆板"
+params:
+  scale_range: [0.95, 1.05]
+  position_range: [-10, 10]
+  duration: "per_clip"
+apply_condition: {}
+implementation:
+  engine: "moviepy"
+  method: "keyframe_transform"
+quality_tips:
+  best_for: ["静态镜头", "照片素材"]
+  avoid_when: ["已有大幅运动的镜头"]

@@ -1,0 +1,15 @@
+name: "黄金3秒开场"
+category: opening
+description: "开场3秒内用最高密度剪辑抓住观众注意力"
+params:
+  target_duration: [3, 6]
+  shot_count: [3, 5]
+  max_shot_duration: 1.5
+apply_condition:
+  mood: high_energy
+implementation:
+  strategy: "max_density"
+  transition_preference: ["hard_cut", "whip_pan", "speed_ramp"]
+quality_tips:
+  best_for: ["快闪vlog开场"]
+  avoid_when: ["慢叙事vlog"]

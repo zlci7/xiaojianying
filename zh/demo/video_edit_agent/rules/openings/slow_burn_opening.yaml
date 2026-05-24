@@ -1,0 +1,15 @@
+name: "慢热开场"
+category: opening
+description: "用舒缓的镜头慢慢引入故事"
+params:
+  target_duration: [8, 15]
+  shot_count: [2, 4]
+  max_shot_duration: 5.0
+apply_condition:
+  mood: relaxed
+implementation:
+  strategy: "slow_build"
+  transition_preference: ["dissolve", "fade"]
+quality_tips:
+  best_for: ["叙事vlog", "旅行纪录片"]
+  avoid_when: ["快闪风格"]

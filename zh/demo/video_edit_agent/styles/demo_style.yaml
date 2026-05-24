@@ -1,0 +1,53 @@
+meta:
+  source_vlog: "demo_reference.mp4"
+  source_duration: 120
+  style_type: fast_flash
+  style_summary: "High-energy fast-flash travel vlog - demo style"
+
+shot_pattern:
+  avg_duration: 1.5
+  duration_range: [0.3, 3.0]
+  speed_variation:
+    speed_ramp_ratio: 0.3
+    common_modes:
+    - fast_forward
+    - slow_mo_punch
+
+transitions:
+  density: high
+  types:
+    hard_cut: 0.40
+    match_cut: 0.20
+    whip_pan: 0.15
+    zoom_transition: 0.10
+    speed_ramp_transition: 0.10
+    light_leak: 0.05
+  avg_transition_duration: 0.25
+
+rhythm:
+  bpm_sync: true
+  beat_alignment: on_beat
+  pace_curve:
+  - high
+  - high
+  - mid_peak
+  - high
+
+aesthetic:
+  color_temp: warm
+  saturation: 15
+  contrast: high
+  dominant_colors:
+  - '#FF8C42'
+  - '#1A1A2E'
+
+post_processing:
+  keyframe_animation:
+    scale_zoom: true
+    position_drift: true
+    rotation_minor: false
+  effects:
+    light_leak:
+      frequency: medium
+    glitch:
+      frequency: low

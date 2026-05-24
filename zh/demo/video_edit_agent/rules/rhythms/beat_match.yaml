@@ -1,0 +1,13 @@
+name: "卡点剪辑"
+category: rhythm
+description: "镜头切换与BGM节拍对齐"
+params:
+  alignment: "on_beat"
+  tolerance_ms: 50
+apply_condition:
+  bpm_sync: true
+implementation:
+  method: "beat_align"
+quality_tips:
+  best_for: ["快节奏BGM"]
+  avoid_when: ["无BGM或自由节奏"]
